@@ -12,6 +12,10 @@ set(CXXRT_SOURCES
 
 
 add_library(cxxrt-static STATIC ${CXXRT_SOURCES})
+install(TARGETS cxxrt-static
+  ARCHIVE DESTINATION lib
+  )
+
 #add_library(cxxrt-shared SHARED ${CXXRT_SOURCES})
 
 #set_target_properties(cxxrt-static cxxrt-shared PROPERTIES
